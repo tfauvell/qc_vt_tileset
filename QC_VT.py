@@ -109,12 +109,13 @@ def main():
         statsD[group_size(filePath[1])] += 1
         if filePath[1]/1024 >= max_size:
             flaggedPBF.append((filePath[0], filePath[1]))
-
         fCount += 1
+
     print "\n--------------------------------------"
     print ("TILESET STATS: \n" + str(fCount) + " tiles, smallest tile: " + convert_units(min_PBF[1]) +
            ", largest tile: " + convert_units(max_PBF[1]) + ", total size: " + convert_units(totalSize))
     print "[    size range   ] [  graph   ] # of files"
+
     for key, val in statsD.items():
         print (statsLookUp[key] + pretty_stats(val, fCount) + str(val))
 
