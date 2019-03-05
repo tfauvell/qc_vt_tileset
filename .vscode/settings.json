@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Python27\\ArcGIS10.6\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "git.ignoreLimitWarning": true
+}
